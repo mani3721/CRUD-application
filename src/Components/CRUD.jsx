@@ -64,7 +64,7 @@ class CRUD extends Component {
             </div>
             <div className="todobody">
               <div className="todobody2">
-              {this.state.toDo && this.state.toDo.length ? '': "No Task...."}
+             {!this.state.toDo.length && <div>No Task....</div>}
                 {this.state.toDo.map(({ id, task }, i) => {
                   return (
                     <>
