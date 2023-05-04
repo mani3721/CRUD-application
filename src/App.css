@@ -1,0 +1,133 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.TodoList{
+   background-color: ivory;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 90vh;
+
+}
+.Todobackground{
+  background: rgba( 255, 255, 255, 0.25 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 7.5px );
+-webkit-backdrop-filter: blur( 7.5px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+  width: 40%;
+  height: 80vh;
+}
+.todobodyinput{
+  display: flex;
+  justify-content: space-evenly;
+}
+.enterinput{
+   width: 50%;
+   height: 5vh;
+   border-radius: 5px;
+   border: none;
+   border:1px solid gray;
+   outline: none;
+}
+.create-btn{
+  width: 20%;
+  padding: 5px;
+  background-color: chocolate;
+  border-radius: 10px;
+  color: azure;
+  border: none;
+  cursor: pointer;
+}
+.todobody{
+  height: 60vh;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+
+  
+}
+.todobody2{
+  height: 40vh;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  scroll-behavior: smooth;
+  overflow: scroll;
+  overflow: hidden;
+
+}
+.tasklist{
+  display: flex;
+  justify-content: space-around;
+}
+.action{
+  display: flex;
+  width: 30%;
+  justify-content: space-between;
+}
+.editbtn{
+  background-color: #EA4C89;
+  border-radius: 8px;
+  border-style: none;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  list-style: none;
+  outline: none;
+  padding: 10px 16px;
+  text-align: center;
+  text-decoration: none;
+}
+.deletebtn{
+  background-color: brown;
+  border-radius: 8px;
+  border-style: none;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  list-style: none;
+  outline: none;
+  padding: 10px 16px;
+  text-align: center;
+  text-decoration: none;
+}
