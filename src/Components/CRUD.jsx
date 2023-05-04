@@ -65,12 +65,12 @@ class CRUD extends Component {
             <div className="todobody">
               <div className="todobody2">
               {this.state.toDo && this.state.toDo.length ? '': "No Task...."}
-                {this.state.toDo.map((item, i) => {
+                {this.state.toDo.map(({ id, task }, i) => {
                   return (
                     <>
-                      <div className="tasklist">
+                      <div key={id} className="tasklist">
                         <div>{i + 1}</div>
-                        <div>{item.task}</div>
+                        <div>{task}</div>
                         <div className="action">
                           <button className="editbtn" onClick={() => this.editTodo(i)}>
                             Edit
