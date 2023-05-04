@@ -77,7 +77,7 @@ class CRUD extends Component {
                           </button>
                           <button
                            className="deletebtn"
-                            onClick={() => this.deleteTodo(item.id)}
+                            onClick={() => this.deleteTodo(id)}
                           >
                             Delete
                           </button>
